@@ -9,6 +9,10 @@
     "pnpm-lock.yaml": true,
     "**/dist": true
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": false,
+    "source.fixAll.eslint": false
+  },
   "i18n-ally.keystyle": "flat",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
