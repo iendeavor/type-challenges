@@ -1,1 +1,1 @@
-type TupleToUnion<T> = ValueOf<T>
+type TupleToUnion<T extends any[]> = T[number]

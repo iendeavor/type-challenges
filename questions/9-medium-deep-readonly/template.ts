@@ -1,8 +1,7 @@
-type DeepReadonly<T> = T extends Function
-  ? T
-  : T extends object
-    ? {
-      readonly [P in keyof T]: DeepReadonly<T[P]>
-    }
+type DeepReadonly<T> = T extends object
+    ? T extends Function
+      ? T
+      : {
+        readonly [P in keyof T]: DeepReadonly<T[P]>
+      }
     : T
-
